@@ -11,17 +11,21 @@
 		/>
 	</head>
 	<body>
-		<article>
+		<article data-testid="test-profile-card">
 			<figure>
-				<img src="images/me.jpg" alt="Portrait picture of Ehizojie Azamegbe" />
+				<img
+					src="images/me.jpg"
+					alt="Portrait picture of Ehizojie Azamegbe"
+					data-testid="test-user-avatar"
+				/>
 			</figure>
 			<section id="bio-section">
 				<header>
-					<h2>Ehizojie Samuel Azamegbe</h2>
+					<h2 data-testid="test-user-name">Ehizojie Samuel Azamegbe</h2>
 					<p><em>Software Engineer</em></p>
 				</header>
 
-				<p>
+				<p data-testid="test-user-bio">
 					Ehizojie “Ehiz” Samuel is a creative developer and storyteller
 					passionate about building smart, user-focused web experiences. He
 					blends technical precision with creativity, whether coding full-stack
@@ -29,12 +33,12 @@
 					engaging gaming content.
 				</p>
 
-				<div id="time-p"></div>
+				<div id="time-p" data-testid="test-user-time"></div>
 			</section>
 			<nav>
 				<h3>My Socials:</h3>
-				<ul>
-					<li>
+				<ul data-testid="test-user-social-links">
+					<li data-testid="test-user-social-twitter">
 						<a
 							href="https://x.com/devycrafter"
 							class="socials"
@@ -44,7 +48,7 @@
 							><i class="fab fa-twitter"></i> Twitter</a
 						>
 					</li>
-					<li>
+					<li data-testid="test-user-social-github">
 						<a
 							href="https://github.com/ehiz-js"
 							class="socials"
@@ -54,7 +58,7 @@
 							><i class="fab fa-github"></i> Github</a
 						>
 					</li>
-					<li>
+					<li data-testid="test-user-social-linkedin">
 						<a
 							href="https://www.linkedin.com/in/ehizojie-azamegbe-082ba52b9/"
 							class="socials"
@@ -69,7 +73,7 @@
 
 			<section class="list">
 				<h3>Hobbies</h3>
-				<ul>
+				<ul data-testid="test-user-hobbies">
 					<li>Music</li>
 					<li>Gaming</li>
 					<li>Basketball</li>
@@ -79,7 +83,7 @@
 
 			<section class="list">
 				<h3>Dislikes</h3>
-				<ul>
+				<ul data-testid="test-user-dislikes">
 					<li>Deadlines</li>
 					<li>Being broke</li>
 					<li>Slow network</li>
